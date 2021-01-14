@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Raleway", sans-serif !important;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+.container {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.row {
+  margin-right: -15px !important;
+  margin-left: -15px !important;
+}
+
+.breadcrumb-area {
+  float: left;
+  width: 100%;
+  margin-top: 90px;
+}
+.main-content-area {
+  float: left;
+  width: 100%;
+  margin-bottom: 70px;
+}
+.main-content-area img {
+  max-width: 100%;
+}
+.main-content-area h1 {
+  float: left;
+  margin: 0;
+  width: 100%;
+  color: #2a3341;
+  font-weight: 900;
+  font-size: 34px;
+}
+.breadcrumb {
+  background-color: #fff;
+  border-radius: 0;
+  list-style: outside none;
+  margin-bottom: 20px;
+  padding: 20px 0px;
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: "/\00a0";
+}
+.breadcrumb li a,
+.breadcrumb li {
+  font-size: 12px;
+  color: #808080;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+a {
+  color: #337ab7;
+  text-decoration: none !important;
+}
+p {
+  color: #444;
+  font-size: 17px;
+  font-weight: 300 !important;
+  margin: 0 0 15px;
+  font-family: Source Sans Pro;
+  line-height: 1.6em;
+}
+.title-desc {
+  color: #777;
+  float: left;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  margin-top: 6px;
+  position: relative;
+  width: 100%;
+}
+.title-desc::before {
+  background-color: #fcb424;
+  content: "";
+  height: 6px;
+  left: 0;
+  position: absolute;
+  top: 39px;
+  width: 35px;
+}
+.egitim-alt-basligi-detay {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.egitim-alt-basligi-item {
+  float: left;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  align-items: center;
+}
+.egitim-alt-basligi-item:nth-child(2n + 1) {
+  grid-template-columns: 1fr 400px;
+}
+.egitim-alt-basligi-item:nth-child(2n + 1) picture {
+  grid-column-start: 2;
+}
+.egitim-alt-basligi-item:nth-child(2n + 1) .eab-content {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  margin-left: 0;
+  margin-right: -60px;
+  text-align: right;
+}
+.egitim-alt-basligi-item picture {
+  float: left;
+  width: 100%;
+  height: 400px;
+  background: #f3f3f3;
+}
+img {
+  vertical-align: middle;
+}
+.egitim-alt-basligi-item .eab-content {
+  background: #fff;
+  margin-left: -60px;
+  padding: 25px;
+}
+.egitim-alt-basligi-item .eab-content p {
+  font-size: 16px;
+  line-height: 1.7em;
+}
+.egitim-alt-basligi-item .eab-content h6 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .egitim-alt-basligi-item {
+    grid-template-columns: 280px 1fr;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  .egitim-alt-basligi-item {
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 479px) and (min-width: 321px) {
+  .main-content-area h1 {
+    font-size: 28px;
+  }
+  .title-desc {
+    font-size: 17px;
+  }
+  .egitim-alt-basligi-item {
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+  .egitim-alt-basligi-item:nth-child(2n + 1) {
+    grid-template-columns: 1fr;
+  }
+  .egitim-alt-basligi-item:nth-child(2n + 1) picture {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  .egitim-alt-basligi-item:nth-child(2n + 1) .eab-content {
+    grid-column-start: 1;
+    grid-row-start: auto;
+    text-align: left;
+    width: 100%;
+  }
+  .egitim-alt-basligi-item picture {
+    height: auto;
+  }
+  .egitim-alt-basligi-item .eab-content {
+    margin: 10px 0 0 0;
+    padding: 0;
+  }
+  .breadcrumb {
+    background-color: #fff;
+    border-radius: 0;
+    list-style: outside none none !important;
+    margin-bottom: 20px !important;
+    padding: 20px 15px !important;
+  }
+}
